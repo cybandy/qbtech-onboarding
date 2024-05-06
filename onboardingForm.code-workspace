@@ -1,0 +1,18 @@
+{
+    "folders": [
+        {
+            "path": "./"
+        }
+    ],
+    "settings": {
+        "nuxtr.defaultPackageManager": "pnpm",
+        "nuxtr.monorepoMode.DirectoryName": "nuxt-ui-app",
+        "nuxtr.projectTemplates": [],
+        "cSpell.words": [
+            "Nunito",
+            "pinia",
+            "tailwindcss",
+            "vueuse"
+        ]
+    }
+}

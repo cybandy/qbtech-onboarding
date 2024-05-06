@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/fonts": "^0.7.0",
+    "@nuxt/ui": "^2.13.0",
+    "@vueuse/core": "^10.9.0",
+    "nuxt": "^3.10.1"
+  },
+  "dependencies": {
+    "@nuxt/image": "^1.7.0",
+    "@vueuse/nuxt": "^10.9.0",
+    "nuxt-lodash": "^2.5.3"
+  }
+}
