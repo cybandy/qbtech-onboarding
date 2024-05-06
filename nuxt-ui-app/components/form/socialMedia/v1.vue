@@ -4,7 +4,7 @@ const { social: state, step } = storeToRefs(formStore)
 </script>
 
 <template>
-    <form class="space-y-5 h-full">
+    <form class="grid gap-5">
         <UFormGroup label="Facebook" name="facebook">
             <UInput v-model="state.facebook" />
         </UFormGroup>

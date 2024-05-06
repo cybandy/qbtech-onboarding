@@ -47,7 +47,7 @@ async function onSubmit() {
 </script>
 
 <template>
-    <form class="space-y-5 h-full overflow-y-auto">
+    <form class="grid gap-5">
 
         <UFormGroup label="Company Name" name="companyName">
             <UInput v-model="state.companyName" />
@@ -59,10 +59,7 @@ async function onSubmit() {
             <UTextarea :rows="3" v-model="state.companyDescription" />
         </UFormGroup>
         <UFormGroup label="Services" name="services" :ui="{ container: 'flex flex-col gap-2 w-full' }">
-            <!-- <div v-for="(serve, ind) of services" class="flex items-center gap-1">
-                <span class="p-2 rounded-full">{{ ind + 1 }}</span>
-                <UInput v-model="services[ind]" />
-            </div> -->
+
             <UInput v-for="(serve, ind) of services" v-model="services[ind]" />
         </UFormGroup>
 

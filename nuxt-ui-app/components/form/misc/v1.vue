@@ -40,7 +40,7 @@ const files = ref([] as File[])
 </script>
 
 <template>
-    <form action="" class="space-y-5 h-full">
+    <form action="" class="grid gap-5">
         <UFormGroup label="Do you have any competitors / companies you look up to? List them" name="services"
             :ui="{ container: 'flex flex-col gap-2 w-full' }">
             <UInput v-for="(serve, ind) of services" v-model="services[ind]" />

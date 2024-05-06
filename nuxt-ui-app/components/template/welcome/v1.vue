@@ -12,7 +12,7 @@ onKeyStroke('Enter', () => {
 
 <template>
 
-    <div class="w-full h-full flex flex-col gap-5 text-center ">
+    <div class="w-full h-full flex flex-col gap-5 text-center lg:justify-center">
         <h1 class="text-4xl lg:text-5xl font-NunitoSans font-semibold capitalize">Welcome on board!</h1>
         <div class="space-y-1">
             <p class="text-lg">We're excited to start working with you</p>

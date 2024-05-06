@@ -25,7 +25,7 @@ function changeButtonFunc() {
             </UContainer>
         </header>
         <main class="w-full h-full z-0">
-            <div class="grid md:grid-cols-2 gap-x-5 gap-y-8 w-full h-full">
+            <div class="grid lg:grid-cols-2 gap-x-5 gap-y-8 w-full h-full">
                 <div class="relative h-full w-full">
                     <NuxtImg src="welcome.jpg" format="webp" class="w-full h-full " />
                     <div class="absolute inset-0 w-full h-full bg-primary-600/70"></div>
