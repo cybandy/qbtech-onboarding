@@ -18,7 +18,7 @@ function changeButtonFunc() {
 </script>
 
 <template>
-    <div class="relative w-screen h-screen overflow-y-auto">
+    <div class="relative w-screen h-screen">
         <header ref="headerRef" class="absolute top-0 w-full z-[1]">
             <UContainer>
                 <TemplateHeaderMain />
@@ -30,7 +30,8 @@ function changeButtonFunc() {
                     <NuxtImg src="welcome.jpg" format="webp" class="w-full h-full " />
                     <div class="absolute inset-0 w-full h-full bg-primary-600/70"></div>
                 </div>
-                <UCard class="h-full w-full" :style="{ paddingTop: width > 768 ? menuHeaderHeight + 'px' : '20px' }"
+                <UCard class="h-full w-full overflow-y-auto"
+                    :style="{ paddingTop: width > 768 ? menuHeaderHeight + 'px' : '20px' }"
                     :ui="{ base: 'flex flex-col', body: { base: 'flex-grow w-full' } }">
                     <template #header>
                         <div v-if="id > 1" class="py-4 flex items-center justify-between gap-5">

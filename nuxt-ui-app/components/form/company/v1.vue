@@ -55,10 +55,11 @@ async function onSubmit() {
         <UFormGroup label="Position" name="position">
             <UInput v-model="state.position" />
         </UFormGroup>
-        <UFormGroup label="companyDescription" name="companyDescription">
+        <UFormGroup label="Company Description" name="companyDescription">
             <UTextarea :rows="3" v-model="state.companyDescription" />
         </UFormGroup>
-        <UFormGroup label="Services" name="services" :ui="{ container: 'flex flex-col gap-2 w-full' }">
+        <UFormGroup label="What services do you offer" name="services"
+            :ui="{ container: 'flex flex-col gap-2 w-full' }">
 
             <UInput v-for="(serve, ind) of services" v-model="services[ind]" />
         </UFormGroup>

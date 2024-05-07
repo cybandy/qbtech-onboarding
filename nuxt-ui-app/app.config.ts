@@ -11,7 +11,7 @@ export default defineAppConfig({
     },
     formGroup: {
       label: {
-        base: 'block font-medium text-primary-900 dark:text-primary-50'
+        base: 'block font-medium text-primary-900 dark:text-primary-50 capitalize'
       },
       default: {
         size: 'md'

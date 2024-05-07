@@ -14,7 +14,7 @@ const { social: state, step } = storeToRefs(formStore)
         <UFormGroup label="LinkedIn" name="linkedin">
             <UInput v-model="state.linkedin" />
         </UFormGroup>
-        <UFormGroup label="others" name="othersHandles">
+        <UFormGroup label="Others" name="othersHandles">
             <UInput v-model="state.others" />
         </UFormGroup>
 

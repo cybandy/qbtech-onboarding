@@ -16,7 +16,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
     '@nuxt/image',
-    'nuxt-lodash'
+    'nuxt-lodash',
+    "@nuxtjs/supabase"
   ],
   fonts: {
     families: [
@@ -30,5 +31,8 @@ export default defineNuxtConfig({
   image: {
     inject: true,
     format: ['webp']
+  },
+  supabase: {
+    redirect: false
   }
 })

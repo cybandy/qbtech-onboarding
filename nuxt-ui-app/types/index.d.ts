@@ -1,27 +1,27 @@
 
 export type PersonalData = {
-    email?: string,
-    name?: string,
-    address?: string,
-    phone?: string,
+    email: string | null,
+    name: string | null,
+    address: string | null,
+    phone: string | null,
 }
 
 export type CompanyData = {
-    companyName?: string,
-    position?: string,
-    companyDescription?: string,
-    services: Array<string | undefined>
+    companyName?: string | null,
+    position?: string | null,
+    companyDescription?: string | null,
+    services: Array<string | null>
 }
 
 export type MiscData = {
-    competitors?: Array<string | undefined>,
-    target?: string,
-    geography?: string
+    competitors: Array<string | null>,
+    target: string | null,
+    geography: string | null
 }
 
 export type socialMedia = {
-    facebook?: string,
-    instagram?: string,
-    linkedin?: string,
-    others?: string,
+    facebook: string | null,
+    instagram: string | null,
+    linkedin: string | null,
+    others: string | null,
 }

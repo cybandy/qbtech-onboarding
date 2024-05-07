@@ -37,6 +37,9 @@ const { countries } = storeToRefs(useCountriesStore())
 const selectedCountries = ref([])
 
 const files = ref([] as File[])
+
+
+const emits = defineEmits(['send'])
 </script>
 
 <template>
@@ -58,7 +61,7 @@ const files = ref([] as File[])
 
         <div class="flex items-center justify-between gap-5">
             <UButton label="Prev" @click="() => formStore.changeStep(4)" />
-            <UButton label="Submit" @click="() => formStore.submit()" />
+            <UButton label="Submit" @click="() => emits('send')" />
         </div>
     </form>
 </template>
